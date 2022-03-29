@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    background-color: black;
+    font-family: 'Rajdhani', sans-serif;
+    overflow-x: hidden;
+}
+/* quitar el scrollbar */
+*::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+header{
+    background-color: transparent;
+}
+.nav_right{
+    margin-right: -5rem;
+    background-color: transparent;
+}
+.NavImage{
+    width: 6rem;
+    opacity: 0.9;
+    border-radius: 50%;
+    position: fixed;
+}
+.NavImage:hover {
+	opacity: 0.8;
+	-webkit-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+    box-shadow: rgb(38, 57, 77) 10px 20px 25px -5px;
+}
+.nav_left .linkTop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem;
+    padding-bottom: 1rem;
+    width: 100vw;
+    position: absolute;
+    background-color: transparent;
+    margin: 15px 0px 0px 0px;
+}
+ul{
+    list-style: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin: 1rem
+}
+li{
+    background-color: transparent;
+    cursor: pointer;
+    margin-right: 2rem;
+}
+.nav_right_a{
+    color: white;
+    font-size: 1.5rem;
+    background-color: transparent;
+    margin: 1rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+.nav_right_a:hover, .nav_right_a:active{
+    color: black;
+  text-shadow: rgba(255, 255, 255, 0.95) 0px 1px 2px;
+}
+.nav_right_a:link, .nav_right_a:visited, .nav_right_a:active {
+    text-decoration:none;
+}
+.Hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 100vw;
+}
+.HImage{
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    object-fit: cover;
+}
+.AboutUs{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ background-image: url("/images/tattoohouse.jpg");
+ width: 100%;
+ height: 75vh;
+ opacity: 0.9;
+}
+.AboutUs_title{
+    margin-top: 9rem;
+    color: white;
+    font-size: 6rem;
+    text-align: right;
+}
+.AboutUs_table{
+    color: black;
+    margin: 1rem;
+    opacity: 0.8;
+}
+.AboutUs_table_head{
+background-color: transparent;
+}
+.AboutUs_table_tr{
+    background-color: transparent;
+}
+.AboutUs_table_body{
+    color: black;
+    background-color: transparent;
+}
+th {
+    border-radius: 10px;
+    background-color: transparent;
+    color: grey;
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: left
+}
+td, p{
+    font-size: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    border-radius: 10px;
+    color: white;
+    background-color: transparent;
+}
+.ourArtist{
+    margin-top: 9rem;
+}
+caption{
+    color: white;
+    font-size: 6rem;
+    text-align: right;
+}
+.ourArtist_table{
+    margin: 1rem;
+}
+.ourArtist_table_image{ 
+    transition: transform .5s ease;
+    width: 200px;
+    height: 150px;
+    object-fit: contain;
+}
+.ourArtist_table_image:hover{
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3)
+}
+.ourArtist_table_td{
+    margin: 0;
+}
+.ourArtist_table_td_p{
+    padding: 0;
+    padding-top: 1rem;
+    color: grey;
+}
+.Gallery{
+    margin-top: 11rem;
+}
+.Gallery_table{
+    margin: 1rem;
+}
+.Gallery_table_tr{
+    display: grid;
+    grid-template: 300px / 250px 1fr 3fr;
+    grid-gap: 10px 100px;
+    margin-left: 10vw;
+}
+.Gallery_table_td{
+    margin: 0;
+    padding: 0;
+}
+.Gallery_table_image{
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    filter: opacity(.5);
+    transition: transform .3s ease;
+}
+.Gallery_table_image:hover {
+    filter: opacity(1);
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -o-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    transform: scale(1.15)
+}
+.Contact_header{
+    width: 100%;
+    height: 15rem;
+}
+.Contact_nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 3rem;
+}
+.Contact_navImage{
+    width: 8rem;
+    opacity: 0.9;
+    border-radius: 50%;
+}
+.Contact_navH1{
+    color: white;
+    font-size: 4.5rem;
+    color: #21223d;
+}
+.Contact_title_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Contact_form{
+    display: block;
+    text-align: center;
+}
+.Contact_p_form{
+    margin: 2rem;
+}
+.Contact_title{
+    color: white;
+    font-weight: 500;
+    font-size: 4rem;
+}
+label{
+    font-size: 2rem;
+    color: #21223d;
+}
+input{
+    text-align: center;
+    width: 20rem;
+    height: 2rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 2rem;
+}
