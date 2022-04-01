@@ -137,6 +137,8 @@ td, p{
     color: white;
     background-color: transparent;
 }
+
+/* OUR ARTIST IS MADE IN FLEX */
 .ourArtist{
     margin-top: 9rem;
 }
@@ -169,6 +171,8 @@ caption{
     padding-top: 1rem;
     color: grey;
 }
+
+/* GALLERY IS MADE IN GRID */
 .Gallery{
     margin-top: 11rem;
 }
@@ -177,7 +181,7 @@ caption{
 }
 .Gallery_table_tr{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns:repeat(3, minmax(10px, 1fr));
     grid-gap: 20px 100px;
     margin-left: 10vw;
 }
@@ -186,8 +190,9 @@ caption{
     padding: 0;
 }
 .Gallery_table_image{
-    width: 300px;
+    width: auto;
     height: 250px;
+    inline-size: 100%;
     object-fit: cover;
     border-radius: 10px;
     filter: opacity(.5);
