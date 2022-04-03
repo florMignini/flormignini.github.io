@@ -5,6 +5,8 @@
     margin: 0;
     background-color: black;
     font-family: 'Rajdhani', sans-serif;
+    max-width: 100%;
+    min-height: auto;
 }
 /* quitar el scrollbar */
 *::-webkit-scrollbar {
