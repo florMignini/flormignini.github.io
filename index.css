@@ -217,7 +217,9 @@ caption{
     display: grid;
     grid-template-columns:repeat(3, minmax(10px, 1fr));
     grid-gap: 20px 100px;
-    /* margin-left: 10vw; */
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
 }
 .Gallery_table_td{
     margin: 0;
