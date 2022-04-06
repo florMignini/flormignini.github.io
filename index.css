@@ -30,6 +30,8 @@ display: flex;
 .nav_right{
     margin-right: -5rem;
     background-color: transparent;
+    position: relative;
+    z-index: 4;
 }
 .NavImage{
     width: 5rem;
@@ -73,8 +75,8 @@ li{
     font-weight: 500;
 }
 .nav_right_a:hover, .nav_right_a:active{
-    color: black;
-  text-shadow: rgba(255, 255, 255, 0.95) 0px 1px 2px;
+    color: rgb(33,34,61);
+  text-shadow: rgba(52,152,202, 0.95) 0px 1px 2px;
 }
 .nav_right_a:link, .nav_right_a:visited, .nav_right_a:active {
     text-decoration:none;
@@ -85,6 +87,7 @@ li{
     justify-content: center;
     height: auto;
     width: 100vw;
+    position: relative;
 }
 .HImage{
     width: 100vw;
@@ -92,6 +95,7 @@ li{
     background-repeat: no-repeat;
     background-size: contain;
     object-fit: cover;
+    opacity: 0.3;
 }
 .AboutUs{
  display: flex;
@@ -104,7 +108,8 @@ li{
 }
 .AboutUs_title{
     margin-top: 9rem;
-    color: white;
+    color: rgb(33,34,61);
+    text-shadow: rgba(52,152,202, 0.95) 0px 1px 2px;
     font-size: 6rem;
     text-align: right;
 }
@@ -140,7 +145,8 @@ td, p{
     background-color: transparent;
 }
 caption{
-    color: white;
+    color: rgb(33,34,61);
+    text-shadow: rgba(52,152,202, 0.95) 0px 1px 2px;
     font-size: 6rem;
     text-align: right;
 }
@@ -162,7 +168,8 @@ caption{
 }
 .ourArtist_title{
     margin-top: 9rem;
-    color: white;
+    color: rgb(33,34,61);
+    text-shadow: rgba(52,152,202, 0.95) 0px 1px 2px;
     font-size: 6rem;
     text-align: right;
     font-weight: 500;
