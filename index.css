@@ -246,7 +246,7 @@ caption{
     margin-top: -4rem;
 }
 } 
-@media screen and (max-width:480px) {
+@media screen and (max-width:580px) {
     .ourArtist_mainContainer{
         display: block;
     }
@@ -273,9 +273,9 @@ caption{
 }
 .Gallery_table_tr{
     display: grid;
-    grid-template-columns:repeat(3, minmax(10px, 1fr));
-    grid-gap: 20px 100px;
-    width: 80%;
+    grid-template-columns: repeat(3, minmax(10px, 1fr));
+    grid-gap: 20px 30px;
+    width: 95%;
     margin-right: auto;
     margin-left: auto;
 }
@@ -292,7 +292,7 @@ caption{
         margin-top: 4rem;
     }
   }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 580px) {
     .Gallery_table_tr{
         display: grid;
         grid-template-columns:repeat(1, minmax(10px, 1fr));
