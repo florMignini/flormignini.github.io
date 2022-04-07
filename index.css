@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;500&display=swap');
 
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -124,11 +125,12 @@ background-color: transparent;
 .AboutUs_table_tr{
     background-color: transparent;
 }
+
 .AboutUs_table_body{
     color: black;
     background-color: transparent;
 }
-th {
+.AboutUs_table_tr_th_p{
     border-radius: 10px;
     background-color: transparent;
     color: grey;
@@ -136,7 +138,7 @@ th {
     font-size: 2rem;
     text-align: left
 }
-td, p{
+.AboutUs_table_body_td_p{
     font-size: 1rem;
     padding-right: 2rem;
     padding-left: 2rem;
@@ -150,7 +152,19 @@ caption{
     font-size: 6rem;
     text-align: right;
 }
-
+@media screen and (max-width: 768px) {
+    .AboutUs_title{
+        margin-top: 4rem;
+    }
+        .AboutUs_table_tr_th_p{
+        font-size: 1.5rem;
+    }
+    .AboutUs_table_body_td_p{
+        font-size: 0.8rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+}
 /* OUR ARTIST IS MADE IN FLEX */
 .ourArtist{
     margin-top: 9rem;
@@ -212,7 +226,19 @@ caption{
     padding-top: 1rem;
     color: grey;
 }
-
+@media screen and (max-width:768px) {
+    .ourArtist_container{
+        display: block;
+    }
+    .ourArtist_p {
+        font-size: 0.8rem;
+        margin-right: auto;
+         margin-left: auto;
+}
+.ourArtist_title{
+    margin-top: -4rem;
+}
+} 
 /* GALLERY IS MADE IN GRID */
 .Gallery{
     margin-top: 11rem;
@@ -228,6 +254,29 @@ caption{
     margin-right: auto;
     margin-left: auto;
 }
+@media screen and (max-width: 768px) {
+    .Gallery_table_tr{
+        display: grid;
+        grid-template-columns:repeat(2, minmax(10px, 1fr));
+        grid-gap: 20px 50px;
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .Gallery{
+        margin-top: 4rem;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .Gallery_table_tr{
+        display: grid;
+        grid-template-columns:repeat(1, minmax(10px, 1fr));
+        /* grid-gap: 20px 50px; */
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+  }
 .Gallery_table_td{
     margin: 0;
     padding: 0;
@@ -308,3 +357,6 @@ input:focus{
     background-color: black;
     color: grey;
 }
+
+
+/* medias queries */
