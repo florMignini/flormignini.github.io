@@ -165,6 +165,11 @@ caption{
         padding-left: 1rem;
     }
 }
+@media screen and (max-width:480px){
+    .AboutUs_table_body_td_p{
+        font-size: 0.7rem;
+    }
+}
 /* OUR ARTIST IS MADE IN FLEX */
 .ourArtist{
     margin-top: 9rem;
@@ -189,7 +194,7 @@ caption{
     font-weight: 500;
 }
 .ourArtist_container{
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
     width: 90%;
@@ -209,7 +214,7 @@ caption{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 45%;
+    width: 65%;
     object-fit: contain;
     border-radius: 70px;
 }
@@ -221,6 +226,8 @@ caption{
     transform: scale(1.1)
 }
 .ourArtist_p{
+    margin-left: auto;
+    margin-right: auto;
     width: 50%;
     padding: 0;
     padding-top: 1rem;
@@ -239,6 +246,24 @@ caption{
     margin-top: -4rem;
 }
 } 
+@media screen and (max-width:480px) {
+    .ourArtist_mainContainer{
+        display: block;
+    }
+    .ourArtist_card{
+        margin: 1rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    .ourArtist_image{
+        width: 85%;
+    }
+    .ourArtist_p{
+        width: 75%;
+    }
+}
 /* GALLERY IS MADE IN GRID */
 .Gallery{
     margin-top: 11rem;
