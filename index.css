@@ -282,9 +282,9 @@ caption{
 @media screen and (max-width: 768px) {
     .Gallery_table_tr{
         display: grid;
-        grid-template-columns:repeat(2, minmax(10px, 1fr));
-        grid-gap: 20px 50px;
-        width: 90%;
+        grid-template-columns: repeat(3, minmax(10px, 1fr));
+        grid-gap: 15px 20px;
+        width: 95%;
         margin-right: auto;
         margin-left: auto;
     }
